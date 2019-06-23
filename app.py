@@ -28,7 +28,7 @@ mp3string = longstring[start:end+4]
 
 @app.schedule(Cron(0, 17, '*', '*', '?', '*'))
 def every_day(event):
-    client.publish(PhoneNumber='+13238683811',
+    client.publish(PhoneNumber='+1*********',
                    Message="Here are the daily top 5 posts on https://www.reddit.com/r/worldnews/ this morning: " + mp3string)
-    client.publish(PhoneNumber='+13235018349',
+    client.publish(PhoneNumber='+1*********',
                    Message="Hi! Here are the daily top 5 posts on https://www.reddit.com/r/worldnews/ this morning. " + mp3string + " And remember, Derek loves you!")
